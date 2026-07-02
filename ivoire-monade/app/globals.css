@@ -48,7 +48,7 @@ h2 .accent{color:var(--green)}
 .skill .n{color:var(--gold);font-weight:800}
 .skill h3{font-size:1.08rem;margin:6px 0}
 .skill p{color:var(--muted);font-size:.95rem}
-.pattern{height:14px;background:repeating-linear-gradient(135deg,var(--gold) 0 10px,transparent 10px 20px);opacity:.5}
+.pattern{height:24px;background:url(/pattern.svg) repeat-x;background-size:auto 24px;opacity:.7}
 
 /* Offre */
 .offer{text-align:center}
