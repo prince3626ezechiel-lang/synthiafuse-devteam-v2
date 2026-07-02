@@ -10,6 +10,11 @@ package-lock.json
 .env.local
 .env.*.local
 
+# Decrypted secrets (only the encrypted *.gpg may be committed — see SECRETS.md)
+secrets.env
+secrets.env.decrypted
+*.decrypted
+
 # OS
 .DS_Store
 Thumbs.db
