@@ -17,7 +17,27 @@
     .wrap{max-width:980px;margin:0 auto;padding:0 20px}
     /* Emblème monogramme (placeholder — remplace par le logo EON IVOIRE) */
     .emblem{width:56px;height:56px;border-radius:50%;border:2px solid var(--gold);display:inline-flex;align-items:center;justify-content:center;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:1.6rem;color:var(--gold);background:rgba(0,0,0,.15)}
-    header.hero{background:linear-gradient(155deg,#0f1a2b 0%,#14321f 100%);color:#fff;text-align:center;padding:56px 0 64px}
+    header.hero{position:relative;overflow:hidden;background:linear-gradient(155deg,#0f1a2b 0%,#14321f 100%);color:#fff;text-align:center;padding:56px 0 64px}
+    header.hero .wrap{position:relative;z-index:1}
+    /* Fond animé inspiré de la nature (CSS/SVG, sans framework) */
+    .bg-nature{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+    .bg-nature .blob{position:absolute;border-radius:50%;filter:blur(64px);opacity:.34;mix-blend-mode:screen}
+    .bg-nature .b1{width:420px;height:420px;background:#166534;top:-90px;left:-70px}
+    .bg-nature .b2{width:360px;height:360px;background:#A17846;bottom:-110px;right:-50px}
+    .bg-nature .b3{width:300px;height:300px;background:#F1C40F;top:28%;left:42%;opacity:.2}
+    .bg-nature .waves{position:absolute;left:0;bottom:-2px;width:130%;height:130px}
+    .bg-nature .waves path{fill:none;stroke:#A17846;stroke-width:2;opacity:.25}
+    .bg-nature .leaf{position:absolute;bottom:-16px;width:9px;height:9px;background:var(--gold);border-radius:60% 40% 62% 38%;opacity:.0}
+    @keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(46px,34px) scale(1.16)}}
+    @keyframes sway{from{transform:translateX(0)}to{transform:translateX(-60px)}}
+    @keyframes rise{0%{transform:translateY(0) rotate(0);opacity:0}12%{opacity:.55}100%{transform:translateY(-560px) rotate(260deg);opacity:0}}
+    @media (prefers-reduced-motion: no-preference){
+      .bg-nature .b1{animation:drift 18s ease-in-out infinite alternate}
+      .bg-nature .b2{animation:drift 24s ease-in-out -6s infinite alternate}
+      .bg-nature .b3{animation:drift 30s ease-in-out -12s infinite alternate}
+      .bg-nature .waves{animation:sway 16s ease-in-out infinite alternate}
+      .bg-nature .leaf{animation:rise linear infinite}
+    }
     .brandbar{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:26px}
     .brandbar .name{font-family:Georgia,"Times New Roman",serif;letter-spacing:3px;font-size:1.35rem;color:#fff}
     .brandbar .name small{display:block;letter-spacing:1px;font-size:.62rem;color:var(--gold);font-family:system-ui,sans-serif;text-transform:uppercase}
@@ -68,6 +88,20 @@
 </head>
 <body>
   <header class="hero">
+    <div class="bg-nature" aria-hidden="true">
+      <span class="blob b1"></span>
+      <span class="blob b2"></span>
+      <span class="blob b3"></span>
+      <span class="leaf" style="left:12%;animation-duration:15s;animation-delay:-1s"></span>
+      <span class="leaf" style="left:28%;animation-duration:19s;animation-delay:-5s"></span>
+      <span class="leaf" style="left:47%;animation-duration:22s;animation-delay:-9s"></span>
+      <span class="leaf" style="left:66%;animation-duration:17s;animation-delay:-3s"></span>
+      <span class="leaf" style="left:83%;animation-duration:24s;animation-delay:-11s"></span>
+      <svg class="waves" viewBox="0 0 1440 130" preserveAspectRatio="none">
+        <path d="M0,80 C240,120 480,40 720,70 C960,100 1200,30 1440,70" />
+        <path d="M0,100 C260,60 520,120 780,90 C1020,60 1260,110 1440,90" />
+      </svg>
+    </div>
     <div class="wrap">
       <div class="brandbar">
         <!-- Remplace .emblem par <img src="logo.png" alt="Logo Ivoire Monade"> quand tu as le logo -->
