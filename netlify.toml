@@ -1,0 +1,4 @@
+# Déploiement Netlify du site de vente Ivoire Monade
+[build]
+  publish = "pack-business-glm/site"
+  command = ""

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ivoire Monade — Pack Business : 13 compétences pour réussir en ligne</title>
+  <meta name="description" content="Ivoire Monade : le Pack Business, 13 compétences pour lancer votre activité en ligne — e-commerce, produit digital, publicité, création de site, affiliation. Accès à vie, satisfait ou remboursé." />
+  <link rel="canonical" href="https://ivoire-monade.shop/" />
+  <style>
+    :root{
+      --navy:#1E293B; --green:#166534; --gold:#A17846; --yellow:#F1C40F;
+      --paper:#FAF7F0; --card:#ffffff; --muted:#5b6b83; --line:#e7ded2;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--navy);background:var(--paper);line-height:1.6}
+    .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+    /* Emblème monogramme (placeholder — remplace par le logo EON IVOIRE) */
+    .emblem{width:56px;height:56px;border-radius:50%;border:2px solid var(--gold);display:inline-flex;align-items:center;justify-content:center;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:1.6rem;color:var(--gold);background:rgba(0,0,0,.15)}
+    header.hero{position:relative;overflow:hidden;background:linear-gradient(155deg,#0f1a2b 0%,#14321f 100%);color:#fff;text-align:center;padding:56px 0 64px}
+    header.hero .wrap{position:relative;z-index:1}
+    /* Fond animé inspiré de la nature (CSS/SVG, sans framework) */
+    .bg-nature{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+    .bg-nature .blob{position:absolute;border-radius:50%;filter:blur(64px);opacity:.34;mix-blend-mode:screen}
+    .bg-nature .b1{width:420px;height:420px;background:#166534;top:-90px;left:-70px}
+    .bg-nature .b2{width:360px;height:360px;background:#A17846;bottom:-110px;right:-50px}
+    .bg-nature .b3{width:300px;height:300px;background:#F1C40F;top:28%;left:42%;opacity:.2}
+    .bg-nature .waves{position:absolute;left:0;bottom:-2px;width:130%;height:130px}
+    .bg-nature .waves path{fill:none;stroke:#A17846;stroke-width:2;opacity:.25}
+    .bg-nature .leaf{position:absolute;bottom:-16px;width:9px;height:9px;background:var(--gold);border-radius:60% 40% 62% 38%;opacity:.0}
+    @keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(46px,34px) scale(1.16)}}
+    @keyframes sway{from{transform:translateX(0)}to{transform:translateX(-60px)}}
+    @keyframes rise{0%{transform:translateY(0) rotate(0);opacity:0}12%{opacity:.55}100%{transform:translateY(-560px) rotate(260deg);opacity:0}}
+    @media (prefers-reduced-motion: no-preference){
+      .bg-nature .b1{animation:drift 18s ease-in-out infinite alternate}
+      .bg-nature .b2{animation:drift 24s ease-in-out -6s infinite alternate}
+      .bg-nature .b3{animation:drift 30s ease-in-out -12s infinite alternate}
+      .bg-nature .waves{animation:sway 16s ease-in-out infinite alternate}
+      .bg-nature .leaf{animation:rise linear infinite}
+    }
+    .brandbar{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:26px}
+    .brandbar .name{font-family:Georgia,"Times New Roman",serif;letter-spacing:3px;font-size:1.35rem;color:#fff}
+    .brandbar .name small{display:block;letter-spacing:1px;font-size:.62rem;color:var(--gold);font-family:system-ui,sans-serif;text-transform:uppercase}
+    header.hero h1{font-size:clamp(1.9rem,5vw,3rem);line-height:1.15;margin-bottom:16px}
+    header.hero .lead{font-size:1.15rem;color:#d7e0ee;max-width:660px;margin:0 auto 28px}
+    .badge{display:inline-block;background:var(--yellow);color:var(--navy);font-weight:700;padding:6px 14px;border-radius:999px;font-size:.82rem;margin-bottom:22px;letter-spacing:.5px}
+    .cta{display:inline-block;background:var(--gold);color:#fff;font-weight:800;text-decoration:none;padding:16px 34px;border-radius:12px;font-size:1.1rem;transition:transform .15s ease}
+    .cta:hover{transform:translateY(-2px)}
+    .price{font-size:2rem;font-weight:800;margin:10px 0 2px}
+    .price small{display:block;font-size:.9rem;font-weight:400;color:#d7e0ee}
+    /* Frise de motif de marque */
+    .pattern{height:14px;background:repeating-linear-gradient(135deg,var(--gold) 0 10px,transparent 10px 20px);opacity:.5}
+    section{padding:56px 0}
+    h2{font-size:clamp(1.5rem,4vw,2rem);text-align:center;margin-bottom:10px}
+    h2 .accent{color:var(--green)}
+    .sub{text-align:center;color:var(--muted);max-width:640px;margin:0 auto 36px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+    article.skill{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;border-top:3px solid var(--green)}
+    article.skill .n{color:var(--gold);font-weight:800;font-size:1.1rem}
+    article.skill h3{font-size:1.1rem;margin:6px 0 6px}
+    article.skill p{color:var(--muted);font-size:.95rem}
+    .guarantees{background:var(--navy);color:#fff}
+    .guarantees .grid{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+    .g{display:flex;gap:10px;align-items:flex-start}
+    .g .tick{color:var(--yellow);font-weight:800}
+    .offer{text-align:center}
+    .offer .box{background:var(--card);border:2px solid var(--gold);border-radius:18px;max-width:480px;margin:24px auto 0;padding:32px}
+    .offer .box .price{color:var(--navy)}
+    .pay{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+    .cta.wave{background:#1dc8cd;color:#04343a}
+    .cta.orange{background:#ff7900;color:#fff}
+    .faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:12px}
+    .faq summary{font-weight:700;cursor:pointer}
+    .faq p{color:var(--muted);margin-top:10px}
+    footer{background:var(--navy);color:#9fb0c8;text-align:center;padding:30px 0;font-size:.92rem}
+    footer .name{font-family:Georgia,serif;letter-spacing:2px;color:#fff;font-size:1.1rem}
+    footer a{color:var(--yellow);text-decoration:none}
+    /* Bulle flottante (contact + paiement rapide) */
+    .fab{position:fixed;right:18px;bottom:18px;display:flex;flex-direction:column;gap:12px;z-index:999}
+    .fab a{width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.28);color:#fff;font-weight:800;font-size:.74rem;text-decoration:none;transition:transform .15s ease}
+    .fab a:hover{transform:scale(1.08)}
+    .fab .wa{background:#25D366}
+    .fab .wv{background:#1dc8cd;color:#04343a}
+    .fab .om{background:#ff7900}
+    .fab svg{width:32px;height:32px;fill:#fff}
+    @media(max-width:480px){.fab a{width:52px;height:52px}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="bg-nature" aria-hidden="true">
+      <span class="blob b1"></span>
+      <span class="blob b2"></span>
+      <span class="blob b3"></span>
+      <span class="leaf" style="left:12%;animation-duration:15s;animation-delay:-1s"></span>
+      <span class="leaf" style="left:28%;animation-duration:19s;animation-delay:-5s"></span>
+      <span class="leaf" style="left:47%;animation-duration:22s;animation-delay:-9s"></span>
+      <span class="leaf" style="left:66%;animation-duration:17s;animation-delay:-3s"></span>
+      <span class="leaf" style="left:83%;animation-duration:24s;animation-delay:-11s"></span>
+      <svg class="waves" viewBox="0 0 1440 130" preserveAspectRatio="none">
+        <path d="M0,80 C240,120 480,40 720,70 C960,100 1200,30 1440,70" />
+        <path d="M0,100 C260,60 520,120 780,90 C1020,60 1260,110 1440,90" />
+      </svg>
+    </div>
+    <div class="wrap">
+      <div class="brandbar">
+        <!-- Remplace .emblem par <img src="logo.png" alt="Logo Ivoire Monade"> quand tu as le logo -->
+        <span class="emblem" aria-hidden="true">e</span>
+        <span class="name">IVOIRE MONADE<small>Conseil · Énergies renouvelables · E-business</small></span>
+      </div>
+      <span class="badge">ACCÈS À VIE · MISES À JOUR INCLUSES</span>
+      <h1>Pack Business : 13 compétences pour réussir en ligne</h1>
+      <p class="lead">E-commerce, produit digital, publicité, création de site, affiliation… Tout, dans l'ordre, 100% pratique — quel que soit votre niveau.</p>
+      <p class="price">25 000 FCFA <small>Paiement unique · Satisfait ou remboursé</small></p>
+      <a class="cta" href="#offre">Je commande le pack</a>
+    </div>
+  </header>
+  <div class="pattern" aria-hidden="true"></div>
+
+  <main>
+    <section>
+      <div class="wrap">
+        <h2>Ce que vous allez <span class="accent">maîtriser</span></h2>
+        <p class="sub">13 compétences essentielles pour lancer et faire vivre votre activité en ligne.</p>
+        <div class="grid">
+          <article class="skill"><span class="n">01</span><h3>Dropshipping</h3><p>Lancez votre boutique sans stock et générez des profits.</p></article>
+          <article class="skill"><span class="n">02</span><h3>E-commerce</h3><p>Créez une boutique qui vend et développez votre marque.</p></article>
+          <article class="skill"><span class="n">03</span><h3>Produit digital</h3><p>Créez, packagez et vendez des produits digitaux rentables.</p></article>
+          <article class="skill"><span class="n">04</span><h3>TikTok Business</h3><p>Exploitez TikTok pour attirer, engager et vendre.</p></article>
+          <article class="skill"><span class="n">05</span><h3>Publicité Facebook</h3><p>Créez des campagnes Facebook Ads qui convertissent.</p></article>
+          <article class="skill"><span class="n">06</span><h3>Publicité organique</h3><p>Attirez et convertissez sans dépenser en publicité.</p></article>
+          <article class="skill"><span class="n">07</span><h3>Affiche publicitaire</h3><p>Créez des affiches irrésistibles qui boostent vos ventes.</p></article>
+          <article class="skill"><span class="n">08</span><h3>Vidéo IA UGC</h3><p>Créez des vidéos UGC professionnelles avec l'IA.</p></article>
+          <article class="skill"><span class="n">09</span><h3>Photo shoot avec IA</h3><p>Réalisez des photos professionnelles et créatives avec l'IA.</p></article>
+          <article class="skill"><span class="n">10</span><h3>Vente de service</h3><p>Proposez et vendez vos services, générez des revenus stables.</p></article>
+          <article class="skill"><span class="n">11</span><h3>Apporteur d'affaire</h3><p>Gagnez des commissions en recommandant les bons produits.</p></article>
+          <article class="skill"><span class="n">12</span><h3>Création de site internet</h3><p>Créez des sites professionnels et attirez plus de clients.</p></article>
+          <article class="skill"><span class="n">13</span><h3>Création d'applications</h3><p>Développez vos propres applications et monétisez vos idées.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="guarantees">
+      <div class="wrap">
+        <h2>Pourquoi Ivoire Monade</h2>
+        <p class="sub" style="color:#9fb0c8">Pensé pour passer à l'action, pas pour accumuler de la théorie.</p>
+        <div class="grid">
+          <div class="g"><span class="tick">✓</span><span>Formations complètes, pas à pas</span></div>
+          <div class="g"><span class="tick">✓</span><span>Stratégies éprouvées + exemples pratiques</span></div>
+          <div class="g"><span class="tick">✓</span><span>Accès à vie</span></div>
+          <div class="g"><span class="tick">✓</span><span>Mises à jour régulières</span></div>
+          <div class="g"><span class="tick">✓</span><span>Pour tous les niveaux</span></div>
+          <div class="g"><span class="tick">✓</span><span>Satisfait ou remboursé</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer" id="offre">
+      <div class="wrap">
+        <h2>Rejoignez le <span class="accent">Pack Business</span></h2>
+        <p class="sub">Investissez sur vous aujourd'hui, récoltez votre liberté demain.</p>
+        <div class="box">
+          <p class="price">25 000 FCFA</p>
+          <p style="color:var(--muted);margin-bottom:22px">Paiement unique · Accès à vie · Satisfait ou remboursé</p>
+          <div class="pay">
+            <a class="cta wave" href="https://pay.wave.com/m/M_ci_yDXrUSXUelYJ/c/ci/?amount=25000" rel="noopener" target="_blank">Payer avec Wave</a>
+            <a class="cta orange" href="https://multi.app.orange-money.com/app/v1/kapptivate/qrcode/odyssee/?id=codgen25-ab7e5948a34d4316910b20b895493f5c&amp;v=1&amp;amount=25000" rel="noopener" target="_blank">Payer avec Orange Money</a>
+          </div>
+          <p style="color:var(--muted);margin-top:18px;font-size:.9rem">Une question avant d'acheter ? <a href="https://wa.me/2250788626125" style="color:var(--green)">WhatsApp +225 07 88 62 61 25</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="wrap">
+        <h2>Questions <span class="accent">fréquentes</span></h2>
+        <p class="sub">L'essentiel avant de vous lancer.</p>
+        <details><summary>C'est adapté aux débutants ?</summary><p>Oui. Tout est expliqué depuis le début, pour tous les niveaux.</p></details>
+        <details><summary>Sous quel format sont les formations ?</summary><p>Des vidéos pratiques, à suivre à votre rythme, accessibles à vie.</p></details>
+        <details><summary>Comment payer et recevoir mon accès ?</summary><p>Via Wave ou Orange Money (boutons ci-dessus). Après paiement, vous recevez votre accès.</p></details>
+        <details><summary>Et si ça ne me convient pas ?</summary><p>Vous êtes couvert par la garantie satisfait ou remboursé.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <div class="pattern" aria-hidden="true"></div>
+  <footer>
+    <div class="wrap">
+      <p class="name">IVOIRE MONADE</p>
+      <p>Conseil · Énergies renouvelables · E-business — Côte d'Ivoire</p>
+      <p>Contact : <a href="https://wa.me/2250788626125">WhatsApp +225 07 88 62 61 25</a></p>
+      <p style="margin-top:8px;font-size:.82rem;color:#6b7d97">Les résultats dépendent de votre implication ; aucun gain n'est garanti.</p>
+    </div>
+  </footer>
+
+  <!-- Bulle flottante : WhatsApp, Wave, Orange Money -->
+  <div class="fab" aria-label="Contact et paiement rapide">
+    <a class="wa" href="https://wa.me/2250788626125" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp" title="WhatsApp">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 2.1.55 4.06 1.6 5.82L2 22l4.4-1.15a9.9 9.9 0 0 0 5.64 1.76h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-2.6.68.7-2.53-.2-.32a8.18 8.18 0 0 1-1.26-4.42c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.69 8.23-8.23 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.8-.23-.09-.39-.13-.56.12-.16.25-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42l-.48-.01c-.16 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.16 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+    </a>
+    <a class="wv" href="https://pay.wave.com/m/M_ci_yDXrUSXUelYJ/c/ci/?amount=25000" target="_blank" rel="noopener" aria-label="Payer avec Wave" title="Payer avec Wave">Wave</a>
+    <a class="om" href="https://multi.app.orange-money.com/app/v1/kapptivate/qrcode/odyssee/?id=codgen25-ab7e5948a34d4316910b20b895493f5c&amp;v=1&amp;amount=25000" target="_blank" rel="noopener" aria-label="Payer avec Orange Money" title="Payer avec Orange Money">OM</a>
+  </div>
+</body>
+</html>
