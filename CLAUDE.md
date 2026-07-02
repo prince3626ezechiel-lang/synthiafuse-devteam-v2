@@ -230,6 +230,93 @@ Remember the White Label Requirement above — no Claude/Anthropic/Claude Code r
 - `fix/*` — bug fixes
 - `test/*` — experimental changes
 
+## 🧩 REFERENCE SKILLS CATALOG (external — cadralis)
+
+The following is a **reference catalog** of 42 Claude Skills curated by cadralis
+(`cadralis.fr`). These are **not implemented in this repository** — they are listed
+here as a capability map for inspiration and prioritization. When a task overlaps
+one of these areas, consider whether the pattern is worth adapting into a
+token-optimized module here rather than reinventing it. Descriptions are
+translated/condensed from the source catalog.
+
+> Excluded on purpose: the "L1B3RT4S" jailbreak repository seen in the source
+> material is a prompt-injection/jailbreak resource and is intentionally left out —
+> do not integrate or take inspiration from it.
+
+### Design & UI
+| # | Skill | Category | What it does |
+|---|-------|----------|--------------|
+| 01 | Frontend Design | Interface design | Bold frontend UIs that avoid the generic "AI-generated UI" look |
+| 02 | Color Expert | Color / Identity | Palettes, contrast, accessibility, OKLCH/OKLAB, brand colors |
+| 03 | Hand-Drawn Diagrams | Diagram / Visual | Excalidraw-style hand-drawn diagrams with editable links + export |
+| 04 | claudedesignskills | 3D / Motion | Advanced visuals: Three.js, GSAP, Framer Motion, Lottie, Spline |
+| 05 | Nothing Design Skill | UI system | Nothing Phone design language: monochrome, industrial, typo-led |
+| 06 | Canvas-design | Poster / Static | Posters, PNG, PDF, static campaign visuals from real design principles |
+
+### Social Media & Content
+| # | Skill | Category | What it does |
+|---|-------|----------|--------------|
+| 07 | Charlie Hills Social Media | Social system | Full content system: voice, posts, reels, thumbnails, carousels, scoring, analytics |
+| 08 | Voice-builder | Brand voice | Interviews you, analyzes samples, builds a coherent, less-"AI" voice doc |
+| 09 | Reels-scripting | Reels / TikTok | Deconstructs high-performing Reels, writes new scripts in your voice |
+| 10 | Post-scorer | Social analytics | Scores drafts against your past performance to catch weak content pre-publish |
+| 11 | Youtube-thumbnail | YouTube thumbnails | Turns a video title into a branded thumbnail prompt, CTR-driven |
+| 12 | Hook-generator | Copy / Hooks | Strong hooks via PAS, AIDA, BAB, STAR, SLAY frameworks |
+
+### Marketing & Growth
+| # | Skill | Category | What it does |
+|---|-------|----------|--------------|
+| 13 | Twitter Algorithm Optimizer | X growth | Analyzes/rewrites tweets from Twitter's open-source algorithm insights |
+| 14 | Marketing Module | Marketing system | End-to-end marketing: content, SEO, CRO, channels, growth, intelligence, sales |
+| 15 | Marketing Skills | Growth / Copy / SEO | CRO, copywriting, SEO, analytics, growth engineering, ad creation, content strategy |
+| 16 | Email Marketing Bible | Email marketing | Subject lines, segmentation, lifecycle flows, deliverability, reactivation |
+| 17 | Competitive Ads Extractor | Ad intelligence | Pulls competitor ads from ad libraries, analyzes messaging + creative patterns |
+| 18 | Social Media Research | Market research | Analyzes sentiment/trends on Reddit & X from real discussions and citations |
+
+### Research & Knowledge
+| # | Skill | Category | What it does |
+|---|-------|----------|--------------|
+| 19 | Daydream | Knowledge exploration | Mines your knowledge base for non-obvious connections, patterns, ideas |
+| 20 | Humanizer | Writing cleanup | Removes AI writing tics: repetitive structure, generic phrasing, unnatural rhythm |
+| 21 | Anything to NotebookLM | Content repurposing | Converts videos, PDFs, web pages, articles into podcasts, decks, mind maps, quizzes |
+| 22 | Deep Research Engine | Deep research | 8-phase research pipeline with credibility scoring and aggregated search |
+| 23 | Academic Research Skills | Academic writing | Full academic flow: research, drafting, proofreading, revision, finalization |
+| 24 | Vexor Semantic Search | Private search | Local semantic search — find by meaning, not just keywords |
+
+### Media Production
+| # | Skill | Category | What it does |
+|---|-------|----------|--------------|
+| 25 | Remotion Best Practices | Programmatic video | React-based video: animations, subtitles, FFmpeg, Lottie, MP4 render |
+| 26 | GPT Image 2 Skill | Image generation | Image generation/editing, variants, style presets, per-platform presets |
+| 27 | AI Video Toolkit | Video production | Native AI video pipeline: scripts, demo capture, voice-over, scene review, MP4 |
+| 28 | AI Music Album Production | Music production | Full AI album: lyrics, prompts, mixing, mastering, release plan |
+| 29 | Generative Media Skills | Multimodal media | Drives image/video/audio generation across multiple providers & platforms |
+| 30 | Dev Browser | Web automation | Gives an AI agent browser powers: QA, research, automation, web workflows |
+
+### Dev, Product & Engineering
+| # | Skill | Category | What it does |
+|---|-------|----------|--------------|
+| 31 | Web Scraper | Web scraping | Scrapes sites with strategy selection, browser fallback, API sniffing, validation |
+| 32 | Skill Seekers | Skill creation | Converts doc sites, GitHub repos, and PDFs into reusable Claude Skills |
+| 33 | Autoresearch Skill | Auto / Iteration | Runs self-improvement workflows: code, deploy, content, marketing, sales, design |
+| 34 | PM Skills Marketplace | Product management | Product workflows: discovery, strategy, execution, launch, growth, OKR, PRD, pricing |
+| 35 | JTBD Interview Tool | Customer research | Runs Jobs-To-Be-Done interviews, turns insights into briefs and messaging |
+| 36 | AI Transformation Discovery | AI consulting | Spots AI opportunities via consulting frameworks, maturity analysis, value-stream mapping |
+| 37 | Superpowers | Engineering workflow | Forces brainstorm → plan → write tests → execute → review, like a senior engineer |
+| 38 | Repomix | Code context | Compresses an entire repo into one AI-readable file for faster code analysis |
+| 39 | Antfu skills | Engineering skills | Production-grade agent skills for modern dev, curated by Anthony Fu |
+
+### Health & Writing
+| # | Skill | Category | What it does |
+|---|-------|----------|--------------|
+| 40 | Personal Health Assistant | Health data | Analyzes medical reports & health metrics for wellness recommendations |
+| 41 | DNA Analysis | Genomic analysis | Analyzes 23andMe / AncestryDNA data: health, ancestry, nutrition, pharmacogenomics, longevity |
+| 42 | Beautiful Prose | Prose / Writing | Stronger, cleaner, more timeless English prose with less AI "fluff" |
+
+**Most relevant to this project's mission** (token-efficient multi-agent dev): #38 Repomix
+(code-context compression — conceptually aligned with this repo's metadata-based agent
+discovery), #32 Skill Seekers, #37 Superpowers, #33 Autoresearch, and #30 Dev Browser.
+
 ## 📝 REFERENCES
 
 ### Essential docs (read in this order for context)
