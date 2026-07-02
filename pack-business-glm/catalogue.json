@@ -1,0 +1,93 @@
+{
+  "pack": {
+    "nom": "Pack Business - Système GLM",
+    "sous_titre": "La collection ultime pour réussir en ligne",
+    "promesse": "13 ebooks / 13 compétences / 1 seul objectif : votre réussite",
+    "prix": "350000 FCFA",
+    "format": "Formations vidéo (.mp4) + documents",
+    "garanties": [
+      "Accès à vie",
+      "Mises à jour régulières",
+      "100% pratique",
+      "Résultats rapides",
+      "Pour tous niveaux",
+      "Satisfait ou remboursé"
+    ],
+    "source_drive": "https://drive.google.com/drive/folders/1QcB5Vtc3Q-ldlwsxPwUxS-0sQfO9WMp2",
+    "note": "Contenu majoritairement en vidéo. Ce catalogue est établi à partir des titres de dossiers/fichiers et de l'affiche d'offre, pas d'une transcription du contenu enseigné."
+  },
+  "competences": [
+    { "id": 1, "titre": "Dropshipping", "benefice": "Lancez votre boutique sans stock et générez des profits" },
+    { "id": 2, "titre": "E-commerce", "benefice": "Créez une boutique qui vend et développez votre marque" },
+    { "id": 3, "titre": "Produit digital", "benefice": "Créez, packagez et vendez des produits digitaux rentables" },
+    { "id": 4, "titre": "TikTok Business", "benefice": "Exploitez TikTok pour attirer, engager et vendre" },
+    { "id": 5, "titre": "Publicité Facebook", "benefice": "Créez des campagnes Facebook Ads qui convertissent" },
+    { "id": 6, "titre": "Publicité organique", "benefice": "Attirez et convertissez sans dépenser en publicité" },
+    { "id": 7, "titre": "Affiche publicitaire", "benefice": "Créez des affiches irrésistibles qui boostent vos ventes" },
+    { "id": 8, "titre": "Vidéo IA UGC", "benefice": "Créez des vidéos UGC professionnelles avec l'IA" },
+    { "id": 9, "titre": "Photo shoot avec IA", "benefice": "Réalisez des photos professionnelles et créatives avec l'IA" },
+    { "id": 10, "titre": "Vente de service", "benefice": "Proposez et vendez vos services et générez des revenus stables" },
+    { "id": 11, "titre": "Devenir apporteur d'affaire", "benefice": "Gagnez des commissions en recommandant les bons produits (affiliation)" },
+    { "id": 12, "titre": "Création de site internet", "benefice": "Créez des sites professionnels et attirez plus de clients" },
+    { "id": 13, "titre": "Création d'applications", "benefice": "Développez vos propres applications et monétisez vos idées" }
+  ],
+  "modules_drive": [
+    {
+      "dossier": "1-COMPRÉHENSION GENERAL",
+      "theme": "Fondations : identité de l'entreprise et choix du produit",
+      "lecons": [
+        "Trouver un nom d'entreprise attirant",
+        "Slogan de votre entreprise et détails",
+        "Identité visuelle de votre entreprise",
+        "Choix du produit"
+      ]
+    },
+    {
+      "dossier": "2-VENTE DE PRODUIT PHYSIQUE",
+      "theme": "Vendre des produits physiques (dropshipping / e-commerce)",
+      "lecons": []
+    },
+    {
+      "dossier": "3-VENTE PRODUIT DIGITAL",
+      "theme": "Créer et vendre des produits digitaux",
+      "lecons": [
+        "Création de produit digital sur Chariow (partie 1)",
+        "Bonus : trouver des produits digitaux à vendre"
+      ]
+    },
+    {
+      "dossier": "4-SITE INTERNET",
+      "theme": "Créer un site professionnel et encaisser les paiements",
+      "lecons": [
+        "Création de site avec V0.dev",
+        "Création de site avec Wix Vibe",
+        "Intégration du paiement Wave"
+      ]
+    },
+    {
+      "dossier": "5-CRÉATION D'APPLICATION WEB",
+      "theme": "Développer une application web",
+      "lecons": []
+    },
+    {
+      "dossier": "7-PUBLICITÉ FACEBOOK pc",
+      "theme": "Publicité Facebook depuis un ordinateur",
+      "lecons": []
+    },
+    {
+      "dossier": "8-PUBLICITÉ ORGANIQUE",
+      "theme": "Acquisition sans budget publicitaire",
+      "lecons": []
+    },
+    {
+      "dossier": "9-PUBLICITÉ AVEC PORTABLE",
+      "theme": "Publicité depuis un smartphone",
+      "lecons": []
+    },
+    {
+      "dossier": "10-Document important",
+      "theme": "Outils et ressources IA (Ma maison IA / LSB1000)",
+      "lecons": []
+    }
+  ]
+}
