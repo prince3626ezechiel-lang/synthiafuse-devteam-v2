@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import { site, skills } from "@/lib/site";
+import { site } from "@/lib/site";
+import Reveal from "@/components/Reveal";
+import SkillsGrid from "@/components/SkillsGrid";
 
 export const metadata: Metadata = {
   title: "Commander le Pack Business",
@@ -36,19 +38,13 @@ export default function PackBusiness() {
         </div>
       </section>
 
-      <section className="dark">
+      <section className="dark patterned">
         <div className="wrap">
-          <h2>Le contenu du <span className="accent">pack</span></h2>
-          <p className="sub">13 compétences, des vidéos pratiques à suivre à votre rythme.</p>
-          <div className="grid">
-            {skills.map((s) => (
-              <article className="skill" key={s.n}>
-                <span className="n">{s.n}</span>
-                <h3>{s.t}</h3>
-                <p>{s.d}</p>
-              </article>
-            ))}
-          </div>
+          <Reveal>
+            <h2>Le contenu du <span className="accent">pack</span></h2>
+            <p className="sub">13 compétences, des vidéos pratiques à suivre à votre rythme.</p>
+          </Reveal>
+          <SkillsGrid />
         </div>
       </section>
     </main>

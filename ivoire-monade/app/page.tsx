@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { site, skills } from "@/lib/site";
+import { site } from "@/lib/site";
 import NatureBackground from "@/components/NatureBackground";
+import Reveal from "@/components/Reveal";
+import SkillsGrid from "@/components/SkillsGrid";
 
 export const metadata: Metadata = {
   title: "Pack Business : 13 compétences pour réussir en ligne",
@@ -30,38 +32,36 @@ export default function Home() {
       </header>
       <div className="pattern" aria-hidden="true" />
 
-      <section>
+      <section className="patterned">
         <div className="wrap">
-          <h2>Ce que vous allez <span className="accent">maîtriser</span></h2>
-          <p className="sub">13 compétences essentielles pour lancer et faire vivre votre activité en ligne.</p>
-          <div className="grid">
-            {skills.map((s) => (
-              <article className="skill" key={s.n}>
-                <span className="n">{s.n}</span>
-                <h3>{s.t}</h3>
-                <p>{s.d}</p>
-              </article>
-            ))}
-          </div>
+          <Reveal>
+            <h2>Ce que vous allez <span className="accent">maîtriser</span></h2>
+            <p className="sub">13 compétences essentielles pour lancer et faire vivre votre activité en ligne.</p>
+          </Reveal>
+          <SkillsGrid />
         </div>
       </section>
 
-      <section className="dark">
+      <section className="dark patterned">
         <div className="wrap">
-          <h2>Pourquoi {site.shortName}</h2>
-          <p className="sub">Pensé pour passer à l'action, pas pour accumuler de la théorie.</p>
-          <div className="grid">
-            {[
-              "Formations complètes, pas à pas",
-              "Stratégies éprouvées + exemples pratiques",
-              "Accès à vie",
-              "Mises à jour régulières",
-              "Pour tous les niveaux",
-              "Satisfait ou remboursé"
-            ].map((g) => (
-              <div className="g" key={g}><span className="tick">✓</span><span>{g}</span></div>
-            ))}
-          </div>
+          <Reveal>
+            <h2>Pourquoi {site.shortName}</h2>
+            <p className="sub">Pensé pour passer à l'action, pas pour accumuler de la théorie.</p>
+          </Reveal>
+          <Reveal>
+            <div className="grid">
+              {[
+                "Formations complètes, pas à pas",
+                "Stratégies éprouvées + exemples pratiques",
+                "Accès à vie",
+                "Mises à jour régulières",
+                "Pour tous les niveaux",
+                "Satisfait ou remboursé"
+              ].map((g) => (
+                <div className="g" key={g}><span className="tick">✓</span><span>{g}</span></div>
+              ))}
+            </div>
+          </Reveal>
         </div>
       </section>
     </main>
