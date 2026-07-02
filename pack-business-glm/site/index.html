@@ -3,67 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pack Business — 13 compétences pour réussir en ligne | Système GLM</title>
-  <meta name="description" content="Pack Business : 13 compétences pour lancer votre activité en ligne — dropshipping, e-commerce, produit digital, publicité, création de site et affiliation. Accès à vie, satisfait ou remboursé." />
+  <title>Ivoire Monade — Pack Business : 13 compétences pour réussir en ligne</title>
+  <meta name="description" content="Ivoire Monade : le Pack Business, 13 compétences pour lancer votre activité en ligne — e-commerce, produit digital, publicité, création de site, affiliation. Accès à vie, satisfait ou remboursé." />
   <link rel="canonical" href="https://ivoire-monade.shop/" />
   <style>
     :root{
-      --bg:#0f1a2b; --card:#16233a; --ink:#0f1a2b; --paper:#faf6f0;
-      --accent:#e8b53f; --accent-ink:#0f1a2b; --muted:#5b6b83; --line:#e7ded2;
-      --ok:#2f9e5b;
+      --navy:#1E293B; --green:#166534; --gold:#A17846; --yellow:#F1C40F;
+      --paper:#FAF7F0; --card:#ffffff; --muted:#5b6b83; --line:#e7ded2;
     }
     *{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
-    body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
-    .wrap{max-width:960px;margin:0 auto;padding:0 20px}
-    header.hero{background:linear-gradient(160deg,#0f1a2b,#1b2c49);color:#fff;text-align:center;padding:64px 0}
+    body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--navy);background:var(--paper);line-height:1.6}
+    .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+    /* Emblème monogramme (placeholder — remplace par le logo EON IVOIRE) */
+    .emblem{width:56px;height:56px;border-radius:50%;border:2px solid var(--gold);display:inline-flex;align-items:center;justify-content:center;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:1.6rem;color:var(--gold);background:rgba(0,0,0,.15)}
+    header.hero{background:linear-gradient(155deg,#0f1a2b 0%,#14321f 100%);color:#fff;text-align:center;padding:56px 0 64px}
+    .brandbar{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:26px}
+    .brandbar .name{font-family:Georgia,"Times New Roman",serif;letter-spacing:3px;font-size:1.35rem;color:#fff}
+    .brandbar .name small{display:block;letter-spacing:1px;font-size:.62rem;color:var(--gold);font-family:system-ui,sans-serif;text-transform:uppercase}
     header.hero h1{font-size:clamp(1.9rem,5vw,3rem);line-height:1.15;margin-bottom:16px}
-    header.hero .lead{font-size:1.15rem;color:#d7e0ee;max-width:640px;margin:0 auto 28px}
-    .badge{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:700;padding:6px 14px;border-radius:999px;font-size:.85rem;margin-bottom:20px;letter-spacing:.5px}
-    .cta{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:800;text-decoration:none;padding:16px 34px;border-radius:12px;font-size:1.1rem;transition:transform .15s ease}
+    header.hero .lead{font-size:1.15rem;color:#d7e0ee;max-width:660px;margin:0 auto 28px}
+    .badge{display:inline-block;background:var(--yellow);color:var(--navy);font-weight:700;padding:6px 14px;border-radius:999px;font-size:.82rem;margin-bottom:22px;letter-spacing:.5px}
+    .cta{display:inline-block;background:var(--gold);color:#fff;font-weight:800;text-decoration:none;padding:16px 34px;border-radius:12px;font-size:1.1rem;transition:transform .15s ease}
     .cta:hover{transform:translateY(-2px)}
     .price{font-size:2rem;font-weight:800;margin:10px 0 2px}
     .price small{display:block;font-size:.9rem;font-weight:400;color:#d7e0ee}
+    /* Frise de motif de marque */
+    .pattern{height:14px;background:repeating-linear-gradient(135deg,var(--gold) 0 10px,transparent 10px 20px);opacity:.5}
     section{padding:56px 0}
     h2{font-size:clamp(1.5rem,4vw,2rem);text-align:center;margin-bottom:10px}
-    .sub{text-align:center;color:var(--muted);max-width:620px;margin:0 auto 36px}
+    h2 .accent{color:var(--green)}
+    .sub{text-align:center;color:var(--muted);max-width:640px;margin:0 auto 36px}
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-    article.skill{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
-    article.skill .n{color:var(--accent);font-weight:800;font-size:1.1rem}
+    article.skill{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;border-top:3px solid var(--green)}
+    article.skill .n{color:var(--gold);font-weight:800;font-size:1.1rem}
     article.skill h3{font-size:1.1rem;margin:6px 0 6px}
     article.skill p{color:var(--muted);font-size:.95rem}
-    .guarantees{background:var(--ink);color:#fff}
+    .guarantees{background:var(--navy);color:#fff}
     .guarantees .grid{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
     .g{display:flex;gap:10px;align-items:flex-start}
-    .g .tick{color:var(--accent);font-weight:800}
+    .g .tick{color:var(--yellow);font-weight:800}
     .offer{text-align:center}
-    .offer .box{background:#fff;border:2px solid var(--accent);border-radius:18px;max-width:460px;margin:24px auto 0;padding:32px}
-    .offer .box .price{color:var(--ink)}
+    .offer .box{background:var(--card);border:2px solid var(--gold);border-radius:18px;max-width:480px;margin:24px auto 0;padding:32px}
+    .offer .box .price{color:var(--navy)}
     .pay{display:flex;flex-direction:column;gap:12px;margin-top:8px}
     .cta.wave{background:#1dc8cd;color:#04343a}
     .cta.orange{background:#ff7900;color:#fff}
-    .faq details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:12px}
+    .faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:12px}
     .faq summary{font-weight:700;cursor:pointer}
     .faq p{color:var(--muted);margin-top:10px}
-    footer{background:var(--ink);color:#9fb0c8;text-align:center;padding:28px 0;font-size:.9rem}
-    footer a{color:#d7e0ee}
+    footer{background:var(--navy);color:#9fb0c8;text-align:center;padding:30px 0;font-size:.92rem}
+    footer .name{font-family:Georgia,serif;letter-spacing:2px;color:#fff;font-size:1.1rem}
+    footer a{color:var(--yellow);text-decoration:none}
   </style>
 </head>
 <body>
   <header class="hero">
     <div class="wrap">
+      <div class="brandbar">
+        <!-- Remplace .emblem par <img src="logo.png" alt="Logo Ivoire Monade"> quand tu as le logo -->
+        <span class="emblem" aria-hidden="true">e</span>
+        <span class="name">IVOIRE MONADE<small>Conseil · Énergies renouvelables · E-business</small></span>
+      </div>
       <span class="badge">ACCÈS À VIE · MISES À JOUR INCLUSES</span>
       <h1>Pack Business : 13 compétences pour réussir en ligne</h1>
-      <p class="lead">Dropshipping, e-commerce, produit digital, publicité, création de site, affiliation… Tout, dans l'ordre, 100% pratique — quel que soit votre niveau.</p>
+      <p class="lead">E-commerce, produit digital, publicité, création de site, affiliation… Tout, dans l'ordre, 100% pratique — quel que soit votre niveau.</p>
       <p class="price">25 000 FCFA <small>Paiement unique · Satisfait ou remboursé</small></p>
       <a class="cta" href="#offre">Je commande le pack</a>
     </div>
   </header>
+  <div class="pattern" aria-hidden="true"></div>
 
   <main>
     <section>
       <div class="wrap">
-        <h2>Ce que vous allez maîtriser</h2>
+        <h2>Ce que vous allez <span class="accent">maîtriser</span></h2>
         <p class="sub">13 compétences essentielles pour lancer et faire vivre votre activité en ligne.</p>
         <div class="grid">
           <article class="skill"><span class="n">01</span><h3>Dropshipping</h3><p>Lancez votre boutique sans stock et générez des profits.</p></article>
@@ -85,7 +99,7 @@
 
     <section class="guarantees">
       <div class="wrap">
-        <h2>Pourquoi ce pack</h2>
+        <h2>Pourquoi Ivoire Monade</h2>
         <p class="sub" style="color:#9fb0c8">Pensé pour passer à l'action, pas pour accumuler de la théorie.</p>
         <div class="grid">
           <div class="g"><span class="tick">✓</span><span>Formations complètes, pas à pas</span></div>
@@ -100,7 +114,7 @@
 
     <section class="offer" id="offre">
       <div class="wrap">
-        <h2>Rejoignez le Pack Business</h2>
+        <h2>Rejoignez le <span class="accent">Pack Business</span></h2>
         <p class="sub">Investissez sur vous aujourd'hui, récoltez votre liberté demain.</p>
         <div class="box">
           <p class="price">25 000 FCFA</p>
@@ -109,26 +123,30 @@
             <a class="cta wave" href="https://pay.wave.com/m/M_ci_yDXrUSXUelYJ/c/ci/?amount=25000" rel="noopener" target="_blank">Payer avec Wave</a>
             <a class="cta orange" href="https://multi.app.orange-money.com/app/v1/kapptivate/qrcode/odyssee/?id=codgen25-ab7e5948a34d4316910b20b895493f5c&amp;v=1&amp;amount=25000" rel="noopener" target="_blank">Payer avec Orange Money</a>
           </div>
+          <p style="color:var(--muted);margin-top:18px;font-size:.9rem">Une question avant d'acheter ? <a href="https://wa.me/22507771878" style="color:var(--green)">WhatsApp +225 07 77 18 78</a></p>
         </div>
       </div>
     </section>
 
     <section class="faq">
       <div class="wrap">
-        <h2>Questions fréquentes</h2>
+        <h2>Questions <span class="accent">fréquentes</span></h2>
         <p class="sub">L'essentiel avant de vous lancer.</p>
         <details><summary>C'est adapté aux débutants ?</summary><p>Oui. Tout est expliqué depuis le début, pour tous les niveaux.</p></details>
         <details><summary>Sous quel format sont les formations ?</summary><p>Des vidéos pratiques, à suivre à votre rythme, accessibles à vie.</p></details>
-        <details><summary>Comment payer et recevoir mon accès ?</summary><p>Via le moyen de paiement indiqué (ex. Wave). Après paiement, vous recevez votre accès.</p></details>
+        <details><summary>Comment payer et recevoir mon accès ?</summary><p>Via Wave ou Orange Money (boutons ci-dessus). Après paiement, vous recevez votre accès.</p></details>
         <details><summary>Et si ça ne me convient pas ?</summary><p>Vous êtes couvert par la garantie satisfait ou remboursé.</p></details>
       </div>
     </section>
   </main>
 
+  <div class="pattern" aria-hidden="true"></div>
   <footer>
     <div class="wrap">
-      <p>Pack Business — Système GLM. Les résultats dépendent de votre implication ; aucun gain n'est garanti.</p>
-      <p>Contact : <a href="https://wa.me/VOTRE_NUMERO">WhatsApp</a> · à personnaliser avec ton numéro</p>
+      <p class="name">IVOIRE MONADE</p>
+      <p>Conseil · Énergies renouvelables · E-business — Côte d'Ivoire</p>
+      <p>Contact : <a href="https://wa.me/22507771878">WhatsApp +225 07 77 18 78</a></p>
+      <p style="margin-top:8px;font-size:.82rem;color:#6b7d97">Les résultats dépendent de votre implication ; aucun gain n'est garanti.</p>
     </div>
   </footer>
 </body>
