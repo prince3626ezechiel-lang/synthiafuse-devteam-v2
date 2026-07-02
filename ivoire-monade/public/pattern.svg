@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 48" width="120" height="48">
+  <!-- Motif de marque EON IVOIRE : ondes africaines répétables (fractales de vagues) -->
+  <g fill="none" stroke="#A17846" stroke-width="1.4" opacity="0.55">
+    <path d="M0 12 Q 15 2 30 12 T 60 12 T 90 12 T 120 12" />
+    <path d="M0 26 Q 15 16 30 26 T 60 26 T 90 26 T 120 26" />
+    <path d="M0 40 Q 15 30 30 40 T 60 40 T 90 40 T 120 40" />
+  </g>
+  <g fill="none" stroke="#166534" stroke-width="1" opacity="0.35">
+    <path d="M0 19 Q 15 9 30 19 T 60 19 T 90 19 T 120 19" />
+    <path d="M0 33 Q 15 23 30 33 T 60 33 T 90 33 T 120 33" />
+  </g>
+</svg>
